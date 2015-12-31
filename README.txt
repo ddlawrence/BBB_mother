@@ -14,8 +14,7 @@ and strip out/add on whatever you need, freely, without restriction.
 
 Makefile & loadscript provided for GCC in Win32 (gasp! it is all i have).  
 I use the XDS100V2 jtag to load programs.  It is more work up front, but 
-easier if you decide to get serious.  The file "app" (provided) will load/run 
-from mmc with MLO, a quick test for you doubting Thomases.  
+easier if you decide to get serious.  
 
 It is all there in very concise format, so it should be easy for noobs 
 to understand/test/hack/mod for your next BBB bare metal project requiring
@@ -23,4 +22,13 @@ a stand-alone control system.  And it is interrupt-ready! (somewhat)
 
 You can provide feedback at www.baremetal.tech  
 
-List for the adventurous:
+TODO List for the adventurous:
+UART interrupt echoing
+implement IRQ read/write to MMC & I2C
+implement a full FAT32 filesystem
+bump up the mmc clock
+bump up sysclk to 1GHz (currently 40Mhz)
+ethernet
+usb
+dma
+GNU libc port
